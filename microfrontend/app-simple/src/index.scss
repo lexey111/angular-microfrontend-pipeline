@@ -1,0 +1,19 @@
+._m_view_one, ._m_view_two {
+  padding: 0.5em 1em;
+  display: block;
+  float: none;
+  background-color: #f6e6bb;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(133, 64, 1, 0.2);
+  color: saddlebrown;
+
+  p {
+	font-size: .8rem;
+  }
+}
+
+._m_view_two {
+  background-color: #bbf6ef;
+  box-shadow: 0 4px 16px rgba(1, 63, 133, 0.2);
+  color: #516696;
+}

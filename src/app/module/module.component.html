@@ -1,0 +1,3 @@
+<div *ngIf="loading && !error" class="module-loading"><i class="c-inline-spinner"></i> Loading {{app}}/{{view}}...</div>
+<div *ngIf="error" class="module-error">{{error}}</div>
+<div id="{{containerId}}" class="module-container" [ngClass]="{loaded}"></div>

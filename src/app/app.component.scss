@@ -1,0 +1,70 @@
+h1.app-title {
+  padding: 0;
+  width: 100%;
+  height: 80px;
+  margin: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #455;
+  color: #cdd;
+  font-weight: normal;
+  font-variant: small-caps;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #344;
+  border-bottom: 2px solid rgb(255, 217, 27);
+
+  a,
+  a:visited {
+    font-variant: small-caps;
+    padding: 12px 24px;
+    text-decoration: none;
+    color: #abb;
+    position: relative;
+  }
+
+  a.active-link {
+    color: #fff;
+  }
+
+  a.active-link:after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background-color: rgb(255, 217, 27);
+    color: #455;
+  }
+}
+
+.app-wrapper {
+  display: block;
+  width: 100%;
+
+  .app-container {
+    padding: 16px 32px;
+  }
+}
+
+.footer {
+  margin-top: auto;
+  height: 48px;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #455;
+  color: #cdd;
+  font-size: 0.8rem;
+}

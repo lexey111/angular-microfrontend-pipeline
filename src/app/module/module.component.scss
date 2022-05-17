@@ -1,0 +1,43 @@
+#_microfront_container {
+  width: 100%;
+  display: block;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+
+.module-container {
+  position: relative;
+  width: 100%;
+  display: block;
+
+  &.loaded {
+    animation-name: show-module;
+    animation-timing-function: ease;
+    animation-duration: .5s;
+    animation-fill-mode: backwards;
+    animation-direction: normal;
+    animation-play-state: running;
+  }
+}
+
+.module-loading {
+  color: #555;
+  opacity: .8;
+}
+
+.module-error {
+  color: maroon;
+}
+
+@keyframes show-module {
+  0% {
+	opacity: 0;
+    transform: translateY(-5px);
+  }
+  100% {
+	opacity: 1;
+    transform: translateY(0);
+  }
+}

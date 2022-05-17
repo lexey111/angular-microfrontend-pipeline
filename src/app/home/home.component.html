@@ -1,0 +1,25 @@
+<h1>Welcome</h1>
+<p>
+    to the Angular/Microfrontend integration example.
+</p>
+
+<p>
+    The goal of this project is demonstrate how to integrate Angular-based host application
+    with React-based microfrontend, and how to reach a seamless build process.
+</p>
+
+<p>
+    If you see this message, everything in the Angular part works.
+</p>
+
+<h2>Micro-application: "app-simple"</h2>
+<p>
+    If you see the blocks below, micro-frontend loader works as well as micro-applications.
+</p>
+<div class="two-columns">
+    <app-module app="app-simple" view="one" [delay]=100></app-module>
+    <app-module app="app-simple" view="two" [delay]=1500></app-module>
+</div>
+
+<h2>Another micro-application: "app-second"</h2>
+<app-module app="app-second" view="text" [delay]=800></app-module>

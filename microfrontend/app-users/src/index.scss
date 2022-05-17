@@ -1,0 +1,56 @@
+._m_view_users {
+  p {
+	color: #bcc;
+  }
+
+  .user-list {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+  }
+
+  .user-card {
+	border-radius: 16px;
+	width: 140px;
+	margin: 0 16px 16px 0;
+	display: flex;
+	flex-flow: column wrap;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	justify-items: center;
+	background-color: #fff;
+	padding: 16px;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, .2);
+
+	.avatar {
+	  img {
+		border-radius: 100%;
+		width: 75px;
+		height: 75px;
+		background-color: #ccc;
+		transition: transform .2s ease;
+		transform-origin: center center;
+	  }
+
+	  padding-bottom: 1em;
+	}
+
+	.description {
+	  font-size: .8em;
+	  color: #556;
+	  text-align: center;
+	}
+
+	transition: background-color .2s ease, box-shadow .4s ease;
+
+	&:hover {
+	  background-color: #fff8d7;
+	  box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+
+	  img {
+		transform: scale(1.2);
+	  }
+	}
+  }
+}
