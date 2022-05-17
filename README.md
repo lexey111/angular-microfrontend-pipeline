@@ -3,6 +3,8 @@
 This project is an illustration to the article about integration
 of microfrontends with Angular's build pipeline.
 
+[Article](https://lexeykoshkin.medium.com/angular-and-microfrontend-pipelines-2f81c22f3bc5).
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you
